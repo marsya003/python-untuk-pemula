@@ -380,3 +380,12 @@ class Cat:
 
 cat1 = Cat()
 cat1.say() # My color is black
+
+
+
+
+
+# PIP dan Virtual Environments
+from colorama import Fore, Style
+
+print(Fore.GREEN + "Halo dari virtual environment" + Style.RESET_ALL)
