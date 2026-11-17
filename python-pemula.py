@@ -184,3 +184,100 @@ for x in range(10):
     if x % 2 == 0:
         continue
     print(x)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ===== Lists =====
+animals = ["Ayam", "Bebek", "Cicak"]
+
+print(animals[1])  # Bebek
+print(animals[-1]) # Cicak
+print(animals[-2]) # Bebek
+
+# Menambah item
+animals = ["Ayam", "Bebek", "Cicak"]
+animals.append("Domba")
+print(animals)
+
+animals.insert(2, "Buaya")
+print(animals)
+
+# Menghapus item
+animals = ["Ayam", "Bebek", "Cicak"]
+animals.remove("Bebek")
+print(animals)
+
+animals = ["Ayam", "Bebek", "Cicak"]
+animals.pop()
+print(animals)
+
+animals = ["Ayam", "Bebek", "Cicak"]
+animals.pop(0)
+print(animals)
+
+animals = ["Ayam", "Bebek", "Cicak"]
+animals.clear()
+print(animals) # []
+
+# Menggabungkan list
+animals = ["Ayam", "Bebek", "Cicak"]
+otherAnimals = ["Domba", "Elang", "Gajah"]
+animals.extend(otherAnimals)
+print(animals)
+
+fruits = ["Apel", "Mangga", "Pisang"]
+otherFruits = ["Durian", "Semangka", "Jeruk"]
+allFruits = fruits + otherFruits
+print(allFruits)
+
+
+# ===== Dictionaries =====
+firstPerson = {
+    "first_name": "Hana",
+    "last_name": "Malika",
+    "age": 10
+}
+
+print(firstPerson['first_name']) # Hana
+print(firstPerson.get('age'))    # 10
+print(firstPerson.keys())
+print(firstPerson.values())
+
+# Menambahkan item
+firstPerson['weight'] = 12
+print(firstPerson)
+
+# Mengubah item
+firstPerson = {
+    "first_name": "Hana",
+    "last_name": "Malika",
+    "age": 10
+}
+firstPerson['age'] = 15
+firstPerson.update({"age": 15})
+firstPerson.update({"hair_color": "black"})
+print(firstPerson)
+
+# Menghapus item
+firstPerson = {
+    "first_name": "Hana",
+    "last_name": "Malika",
+    "age": 10
+}
+firstPerson.pop("age")
+print(firstPerson)
+
+firstPerson.clear()
+print(firstPerson) # {}
